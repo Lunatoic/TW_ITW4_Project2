@@ -1,0 +1,125 @@
+html{
+    background-image: url('../images/signupimage.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* .box{
+    display:grid;
+    grid-template-columns:auto auto
+    
+} */
+.heading{
+    margin:70px;
+    font-size:40px;
+    color:white;
+
+}
+form{
+    background-color:#292c36;
+    margin-left:30px;
+    border-radius: 10px;
+    /* box-shadow: 4px 4px 6px 2px #403f3e , -4px -4px 6px 2px #403f3e;; */ 
+
+}
+
+.inputbox{
+    color:white;;
+    width: 49%;
+    padding:6px 0px 6px 10px;
+   
+
+
+}  
+input{
+        
+        padding: 12px 20px;
+        margin: 12px 0;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        
+       
+}
+
+.inputBoxx
+{
+  position:relative;
+  width:100%;
+  margin-top:10px;
+  text-align: center;
+  margin-left: -6px;
+
+ 
+}
+ .inputBoxx input,
+ .inputBoxx textarea
+
+{
+  width:97%;
+  padding:12px 0;
+  font-size:22px;
+   margin:10px 0;
+   border:none;
+   outline:none;
+   resize:none;
+   color: white;
+   background-color: black;
+   
+}
+.inputBoxx span
+{
+   position:absolute;
+   Left:0;
+   padding:9px 12px;
+   font-size:18px;
+   margin:10px 0;
+   pointer-events:none;
+   transition:0.5s;
+   color:#666;
+   
+}
+
+.inputBoxx input:focus ~ span,
+.inputBoxx textarea:focus ~ span,
+.inputBoxx input:valid ~ span
+.inputBoxx textarea:valid ~ span
+{
+           
+    color:white;
+    font-size: 18px;
+    transform:translateY(-24.4px);
+}
+.radiobtn{
+    text-align: left;
+    font-size: 18px;
+    padding-left:10px;
+}
+.dropdown{
+    text-align: left;
+    font-size: 18px;
+    padding-left:10px;
+
+}
+.btn{
+    
+       
+        padding: 2px 40px;
+        background-color: rgb(240, 25, 25);
+        color: white;
+        border:none;
+        border-radius: 20px;
+        font-size:20px;
+        cursor: pointer;
+        letter-spacing: 1px;
+        text-decoration: none;
+        margin:auto;
+        display:block;
+        
+    
+    }
+.btn:hover{
+    color: rgb(247, 7, 7);
+    
+   background-color:white;
+       
+        
+    }

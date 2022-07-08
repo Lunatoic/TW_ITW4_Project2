@@ -2,7 +2,7 @@
 
 :root{
     --main-color: rgb(240,25,25);
-    --bg: #292c36;
+    --bg: #191a19;
 }
 
 *{
@@ -38,6 +38,18 @@ body{
     justify-content: space-between;
     width: 100%;
     z-index: 1000;
+}
+
+.h2{
+    text-align: center;
+    padding-top: 2rem;
+    font-size: 20px; 
+}
+
+.h1{
+    text-align: center;
+    padding-top: 0.4rem;
+     font-size: 40px;
 }
 
 .header.scrolled{
@@ -203,11 +215,9 @@ body{
 }
 /*about section css ends*/
 
-
-
+/*program section css starts*/
 .programs{
     margin-top: 34px;
-    height: 500px;
 }
 .programs h1{
     text-transform: uppercase;
@@ -254,4 +264,153 @@ body{
     content: "\00BB";
     font-size: 2rem;
     margin-right: 9px;
+}
+/*program section ends*/
+
+
+/*blog section css starts*/
+#testimonies{
+    position: relative;
+}
+.grid{
+    display:grid;
+    grid-template-columns: repeat(3,auto);
+    grid-column-gap:6rem;
+    grid-row-gap:4rem ;
+    padding:2rem 4rem 2rem 4rem;
+
+}
+
+.item1{
+    font-family: "Roboto",Arial,sans-serif;
+    line-height:26px;
+    background-image: url('../images/pink_shade.webp');
+    background-position-x:70%;
+    /* background-size:100%; */
+}
+.item2{
+    font-family: "Roboto",Arial,sans-serif;
+    line-height:26px;
+    background-image: url('../images/green_shade.webp');
+     background-position-x:70%;
+    /* background-size:100%; */
+}
+.item3{
+    font-family: "Roboto",Arial,sans-serif;
+    line-height:26px;
+    background-image: url('../images/violet_shade.webp');
+    background-position-x:70%;
+    /* background-size:100%; */
+}
+.img{
+    border-radius: 50%;
+    object-fit: cover;
+    height:100px;
+    width:100px;
+    
+
+}
+.grid1{
+    display:grid;
+    grid-template-columns:repeat(2,auto);
+    padding-top:1rem;
+    padding-left:10px;
+    justify-content: start;
+    grid-gap: 40px;
+    
+    
+   
+}
+.grid2{
+    display: grid;
+    grid-template-columns:auto auto;
+    padding-top:3rem;
+    padding-left:4px;
+    grid-gap:29px;
+
+}
+.grid2 .items1{
+    margin-left: 100px;
+    font-family: "Roboto",Arial,sans-serif;
+
+}
+.grid2 .items2{
+    margin-right:100px;
+    
+}
+
+.grid2 .items1 .blog1heading{
+    color:rgb(204, 200, 200);
+    font-size: 20px;
+    font-family: "Roboto",Arial,sans-serif;
+
+}
+.grid2 .items1 .blog1subheading{
+   font-size:30px;
+   font-weight: 300px;
+
+}
+.grid2 .items1 .subtitle{
+    font-size: 14px;
+    font-style: italic;
+    color:rgb(204, 200, 200);
+    line-height: 0px;
+}
+.grid2 .items1 .content{
+     line-height: 26px;
+}
+
+.name{
+   font-size:24px;
+   padding-top:2rem;
+   line-height: 0.9rem;
+   
+
+
+}
+.sub-name{
+    font-size:16px;
+    font-style: italic;
+    color:rgb(192, 189, 189);
+}
+
+.container{
+    height:60vh;
+    background-image: url('../images/readyforchnge.webp');
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+}
+
+.changes{
+    font-style:italic;
+    font-size: larger;
+    color:white;
+    font-size: 50px;
+    font-weight: 700;
+    padding:6rem 0rem 2rem 4rem;
+}
+.changes1{
+    font-size:20px;
+    font-weight: bold;
+    color:white;
+    padding: 0rem 2rem 2rem 4rem;
+    
+
+
+}
+.button{
+    margin: 0px 0px 0px 100px;
+    padding: 10px 30px;
+    background-color: rgb(240, 25, 25);
+    color: white;
+    border-color: white;
+    font-size:20px;
+    cursor: pointer;
+    letter-spacing: 1px;
+    text-decoration: none;
+
+}
+.button:hover{
+    background-color: rgb(173, 5, 5);
+    letter-spacing:3px;
 }
