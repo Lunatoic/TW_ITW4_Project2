@@ -235,7 +235,7 @@ h1{
     display: flex;
     text-align: end;
     margin: 0px 0.5rem;
-    box-shadow: 0px 0px 2px 2px var(--main-color);
+    box-shadow: 0px 0px 2px 2px #676a67;
 }
 .programs .programsContainer .programItem img{
     height: 500px;
@@ -300,6 +300,32 @@ h1{
 }
 
 /*trainers section css ends*/
+
+/*presonal trainers section css starts*/
+.pTrainers .pTrainerList{
+    display: flex;
+    justify-content: space-around;
+}
+.pTrainers .pTrainerList .pTContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 500px;
+    text-align: left;
+}
+.pTrainers .pTrainerList .pTContent h2{
+    font-size: 30px;
+}
+.pTrainers .pTrainerList .pTContent p{
+    line-height: 1.5rem;
+    margin: 34px 0px;
+}
+.pTrainers .pTrainerList img{
+    height: 700px;
+    width: 508.350px;
+}
+/*presonal trainers section css ends*/
 
 
 /*blog section css starts*/

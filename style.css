@@ -336,9 +336,6 @@ h3 {
     /* transition: 0.3s all ease-in-out; */
 }
 
-.card_content :hover {
-    /* margin-top: -10px; */
-}
 
 .card_header {
     text-transform: uppercase;
