@@ -275,6 +275,24 @@ h1{
     font-size: 59px;
     color: var(--main-color);
 }
+.button10{
+    margin: 0px 0px 0px 100px;
+    padding: 12px 22px;
+    height: 49px;
+    background-color: rgb(240, 25, 25);
+    color: white;
+    border-color: white;
+    font-size:20px;
+    cursor: pointer;
+    letter-spacing: 1px;
+    text-decoration: none;
+    border-radius: 10px;
+
+}
+.button10:hover{
+    background-color: rgb(173, 5, 5);
+    letter-spacing:3px;
+}
 /*about section css ends*/
 
 /*program section css starts*/
@@ -479,44 +497,15 @@ h1{
 .grid3{
     display: grid;
     grid-template-columns:auto auto;
-    grid-gap: 60px;
+    grid-column-gap:4rem;
+    grid-row-gap: 8rem;
     margin-top:4rem;
+    margin-bottom: 10rem;
     
    
 }
 
-.grid3 .gridcontent {
-    background: #191a19;
-    width: 60%;
-    position: relative;
-    z-index: 2;
-    margin: 0px 90px;
-    text-align: center;
-    margin-top: -40px;
-    padding: 6px 30px;
-    height:140px;
-    border-radius: 10px;;
-    box-shadow: 0px 2px 6px rgb(151 149 149);
-    color:whitesmoke;
-    
-  
-}
-/* .grid3 .gridcontent:hover{
-    background:white;
-    
-} */
 
-.grid3 .life{
-    text-align: center;
-    border-bottom: 2px solid rgb(180, 180, 180);
-    line-height: 2.4;
-    color:grey;
-}
-.grid3 .lifecontent{
-    font-size: 17px;
-    line-height:2.4;
-    color:whitesmoke;
-}
 
 
 .button1{
@@ -528,6 +517,48 @@ h1{
 .grid3 .button1:hover{
     color:rgb(211, 8, 8);
 
+}
+.grid3 .blogimg{
+   position: relative;
+   border-radius: 10px;
+    width: 470px;
+    margin-left: 82px;
+     
+}
+.grid3 .img-content{
+           position:absolute;
+           width:300px;
+           margin-left: 20px;
+           /* padding-bottom: 100px;; */
+}
+.grid3 .gridcontent {
+    background: #191a19;
+    width:300px;
+    position: absolute;
+    z-index: 2;
+    margin: 0px 160px;
+    text-align: center;
+    margin-top: -40px;
+    padding: 6px 30px;
+    height:130px;
+    border-radius: 10px;;
+    box-shadow: 0px 2px 6px rgb(151 149 149);
+    color:whitesmoke;
+    
+  
+}
+
+
+.grid3 .life{
+    text-align: center;
+    border-bottom: 2px solid rgb(180, 180, 180);
+    line-height: 2.4;
+    color:grey;
+}
+.grid3 .lifecontent{
+    font-size: 17px;
+    line-height:1.4;
+    color:whitesmoke;
 }
 /* .grid3 .griditem .blogimg{
     width:34%

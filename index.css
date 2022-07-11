@@ -88,8 +88,24 @@ header .content h1 {
     /* text-transform: uppercase; */
     color: #ffff;
 }
+.button1{
+    margin: 0px 0px 0px 90px;
+    padding: 8px 28px;
+    background-color: rgb(240, 25, 25);
+    color: white;
+    border-color: white;
+    font-size:20px;
+    cursor: pointer;
+    letter-spacing: 1px;
+    text-decoration: none;
+    border-radius: 10px;
 
-.btn {
+}
+.button1:hover{
+    background-color: rgb(173, 5, 5);
+    letter-spacing:3px;
+}
+/* .btn {
     padding: 0.5rem 1.5rem;
     background-color: #ff1010;
     border: 0.3rem solid #ff1010;
@@ -100,7 +116,7 @@ header .content h1 {
     font-size: 1rem;
     width: 10rem;
     height: 4rem;
-}
+} */
 
 
 ul {
@@ -193,9 +209,9 @@ img {
     border-style: none;
 }
 
-.about-text .primary-btn.about-btn:after {
+/* .about-text .primary-btn.about-btn:after {
     opacity: 1;
-}
+} */
 
 .container {
     width: 100%;
@@ -369,7 +385,7 @@ h3 {
     margin: 40px auto;
 }
 
-.card_button {
+/* .card_button {
     padding: 10px;
     border-radius: 50px;
     background: #1f75c4;
@@ -378,8 +394,23 @@ h3 {
     cursor: pointer;
     border: none;
     margin: 24px auto;
-}
+} */
+.card_button{
+    padding: 8px;
+    border-radius: 50px;
+    background:rgb(240, 25, 25);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    letter-spacing: 0.7px;
+    margin: 24px auto;
 
+}
+.card_button:hover{
+    background-color: rgb(173, 5, 5);
+    letter-spacing:2px;
+}
 /* story */
 
 .container_str {
@@ -475,9 +506,9 @@ h3 {
     header .content h1 {
       font-size: 3rem;
     }
-    .btn {
+    /* .btn {
       font-size: 1rem;
-    }
+    } */
     .about-text {
       text-align: center;
     }
