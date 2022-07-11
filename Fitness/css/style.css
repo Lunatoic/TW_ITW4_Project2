@@ -284,21 +284,22 @@ body{
 .item1{
     font-family: "Roboto",Arial,sans-serif;
     line-height:26px;
-    background-image: url('../images/pink_shade.webp');
+    background-image: url('../images/pink-blur-circle.png');
     background-position-x:70%;
     /* background-size:100%; */
 }
 .item2{
     font-family: "Roboto",Arial,sans-serif;
     line-height:26px;
-    background-image: url('../images/green_shade.webp');
+    background-image: url('../images/violet-blur-circle.png');
+
      background-position-x:70%;
     /* background-size:100%; */
 }
 .item3{
     font-family: "Roboto",Arial,sans-serif;
     line-height:26px;
-    background-image: url('../images/violet_shade.webp');
+    background-image: url('../images/aqua-blur-circle.png');
     background-position-x:70%;
     /* background-size:100%; */
 }
@@ -357,9 +358,108 @@ body{
     line-height: 0px;
 }
 .grid2 .items1 .content{
-     line-height: 26px;
+     line-height:1.8;
+}
+.grid3{
+    display: grid;
+    grid-template-columns:auto auto;
+    grid-gap: 60px;
+    margin-top:4rem;
+    
+   
 }
 
+.grid3 .gridcontent {
+    background: #191a19;
+    width: 60%;
+    position: relative;
+    z-index: 2;
+    margin: 0px 90px;
+    text-align: center;
+    margin-top: -40px;
+    padding: 6px 30px;
+    height:140px;
+    border-radius: 10px;;
+    box-shadow: 0px 2px 6px rgb(151 149 149);
+    color:whitesmoke;
+    
+  
+}
+/* .grid3 .gridcontent:hover{
+    background:white;
+    
+} */
+
+.grid3 .life{
+    text-align: center;
+    border-bottom: 2px solid rgb(180, 180, 180);
+    line-height: 2.4;
+    color:grey;
+}
+.grid3 .lifecontent{
+    font-size: 17px;
+    line-height:2.4;
+    color:whitesmoke;
+}
+
+
+.button1{
+    line-height: 2;
+    font-size:13px;
+    color:grey;
+    text-decoration: none;
+}
+.grid3 .button1:hover{
+    color:rgb(211, 8, 8);
+
+}
+/* .grid3 .griditem .blogimg{
+    width:34%
+} */
+.blogsubheading{
+    width: 98%; 
+    text-align: center; 
+    border-bottom: 1px solid rgb(250, 250, 250); 
+    line-height: 0.1em;
+    margin: 80px 10px 20px 10px;
+}
+.blogsubheading span{
+    background-color:#191a19 ; 
+    padding:0px 12px; 
+    font-size:2rem;
+}
+.grid4{
+    display:grid;
+    grid-template-columns: repeat(3,auto);
+    grid-column-gap: 10px;
+    margin-top:2rem;
+    /* width: fit-content; */
+    margin-left:7rem;
+    margin-right:6rem;
+    /* justify-content: center; */
+
+} 
+
+.grid4 .grid4item .grid4img{
+   width:340px;
+   height:210px;
+   border-radius: 10px;
+
+}
+.grid4 .grid4item .grid4content{
+   margin-top:1rem;
+   margin-right:2rem;
+   margin-bottom: 1rem;
+   line-height:1.4;    
+}
+.grid4 .contentheading{
+    font-size:20px;
+    color:rgb(160, 157, 157);
+
+}
+.grid4 .content1{
+    line-height:1.6;
+}
 .name{
    font-size:24px;
    padding-top:2rem;
@@ -376,11 +476,14 @@ body{
 
 .container{
     height:60vh;
-    background-image: url('../images/readyforchnge.webp');
+    background-image: url('../images/readyforchange.PNG');
     background-repeat: no-repeat;
+    
     background-size:100% 100%;
 }
-
+.color{
+    background-color:white;
+}
 .changes{
     font-style:italic;
     font-size: larger;
@@ -414,3 +517,156 @@ body{
     background-color: rgb(173, 5, 5);
     letter-spacing:3px;
 }
+
+/* footer css start */
+
+
+footer .gridcontainer{
+    display: grid;
+    grid-template-columns: repeat(5,auto);
+    grid-column-gap:4rem;
+    padding-left:4rem;
+    padding-right:2rem;
+    padding-top:40px;
+}
+footer .gridcontaineritems{
+    text-align: justify;
+
+}
+footer .gridcontaineritems .gridcontentitems2{
+    color:white;
+    font-size:20px;
+
+}
+footer .gridcontaineritems .gridcontentitems2 .infoitem{
+    color:grey;
+    font-size:16px;
+}
+footer  .exerciseItem{
+    color:white;
+    line-height:1.8;
+ 
+}
+footer .gridcontentitems1 h3{
+    padding-bottom: 2rem;
+    color:rgb(202, 5, 5);
+}
+footer  .innerExerciseItem{
+    color:grey;
+    
+}
+
+footer .news{
+    font-size:16px;
+    padding-bottom: 10px;;
+}
+footer i{
+    color:rgb(202, 5, 5);
+}
+footer .mailbox{
+    height:30px;
+width:200px;
+background-color: rgb(219, 218, 218);
+font-size:20px;
+padding-left:10px;
+border-radius: 10px;
+box-shadow:4px 4px 4px rgb(58, 57, 57);
+}
+
+footer .workinghrs{
+    font-size: 20px;
+    font-weight: 700;
+    padding-top: 40px;
+    color:rgb(202, 5, 5)
+}
+footer .time{
+    padding-top: 10px;
+    line-height: 1.4;
+
+}
+footer .share {
+    padding: 1rem 0;
+}
+
+footer .follow {
+    color: rgb(202, 5, 5);
+    font-size: 20px;
+    font-weight: 700;
+     
+
+}
+.gymname h1{
+    padding-bottom: 1rem;
+    color: rgb(202, 5, 5);
+}
+.gymnamecontent{
+    line-height: 1.4;
+}
+footer .share a {
+     height:2rem;
+     width: 2rem;
+    font-size: 2rem;
+    color: #fff;
+    border:white;
+    /* border: var(--border); */
+    border-radius: 50%;
+}
+
+footer a:hover {
+    background-color: var(--main-color);
+}
+
+
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background-color:black;
+    background-attachment: fixed;
+    padding: 1rem 0;
+    text-align: center;
+    color:white;
+}
+footer p{
+    color:grey;
+    padding-top:70px;
+}
+footer .copyright a {
+    display: inline-block;
+    font-weight: 700;
+    color: black;
+    background-color: white;
+    padding: 3px;
+    width: fit-content;
+    border-radius: 5px;
+}
+
+footer .copyright a:hover {
+    color:rgb(224, 34, 34);
+    font-weight: 800;
+}
+
+footer .copyright .logo-bottom {
+    height: 30px;
+    width: 30px;
+    vertical-align: middle;
+}
+
+/* @media (max-width:820px){
+    footer .gridcontainer{
+        grid-template-columns:repeat(3,auto);
+        grid-column-gap: 3rem;
+    }
+     footer .gridcontaineritems{
+        
+        padding-top:3rem;
+        
+    }
+    footer #getinfo{
+       margin-auto;
+    }
+    footer #letter{
+        margin:auto;
+    }
+   
+} */

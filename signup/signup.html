@@ -7,85 +7,93 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-up</title>
     <link rel="stylesheet" href="signup.css">
+    <script src="https://kit.fontawesome.com/ce6f88462e.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
+    
     <section class="box">
         <div class="signupform">
             <div class="heading">SIGN UP FOR THE WORKOUT</div>
 
             <form class="inputbox">
-                <div class="inputBoxx">
-                    <input type="text" name="" required="required">
-                    <span>Full Name</span>
-
+                <div class="row">
+                    <div class="inputBoxx">
+                        <input type="text" name="" required="required">
+                        <span><i class="fa-solid fa-user"></i> First Name</span>
+                    </div>
+                    <div class="inputBoxx">
+                        <input type="text" name="" required="required">
+                        <span><i class="fa-solid fa-user"></i> Last Name</span>
+                    </div>
                 </div>
-
-                <div class="inputBoxx">
-                    <input type="email" name="" required="required">
-                    <span>Email Address</span>
+                <div  class="inputBoxx">
+                    <input  type="email" name="" required="required">
+                    <span><i class="fa-solid fa-envelope"></i> Email Address</span>
                 </div>
 
 
                 <div class="radiobtn">
                     <label for="gender">Gender</label><br>
                     <input type="radio" id="Male" name="gender" value="Male">
-                    <label for="Male">Male</label><br>
+                    <label for="Male">Male</label>
                     <input type="radio" id="gender" name="gender" value="Female">
                     <label for="Female">Female</label><br>
 
                 </div>
+                <div class="row">
+                    <div class="inputBoxx">
+                        <input type="text" name="" required="required">
+                        <span><i class="fa-solid fa-weight-scale"></i> Your current weight(lbs)</span>
+                    </div>
+
+                    <div class="inputBoxx">
+                        <input type="text" name="" required="required">
+                        <span><i class="fa-solid fa-dumbbell"></i> Height</span>
+                    </div>
+                </div>
+
 
                 <div class="inputBoxx">
                     <input type="text" name="" required="required">
-                    <span>Your current weight(lbs)</span>
+                    <span><i class="fa-solid fa-location-dot"></i> Home address</span>
                 </div>
 
                 <div class="inputBoxx">
                     <input type="text" name="" required="required">
-                    <span>Height</span>
-                </div>
-
-                <div class="inputBoxx">
-                    <input type="text" name="" required="required">
-                    <span>Home address</span>
-                </div>
-
-                <div class="inputBoxx">
-                    <input type="text" name="" required="required">
-                    <span>Phone number</span>
+                    <span><i class="fa-solid fa-phone"></i> Phone number</span>
                 </div>
 
                 <div class="radiobtn">
                     <label for="trainer">Do you require a personal trainer?</label><br>
                     <input type="radio" id="Yes" name="trainer" value="Yes">
-                    <label for="yes">Yes</label><br>
+                    <label for="yes">Yes</label>
                     <input type="radio" id="No" name="trainer" value="No">
-                    <label for="no">No</label><br>
+                    <label for="no">No</label><br><br>
                 </div>
 
                 <div class="radiobtn">
                     <label for="gym">Have you been in a Gym before?</label><br>
-                    <input type="radio" id="Yes" name="gym" value="Yes">
-                    <label for="Yes">Yes</label><br>
+                    <input class="radiobtn" type="radio" id="Yes" name="gym" value="Yes">
+                    <label for="Yes">Yes</label>
                     <input type="radio" id="gym" name="gym" value="No">
                     <label for="No">No</label><br>
 
 
                 </div>
-                <div class="dropdown">
-                    <label for="items">Membership plans</label><br>
-                    <input list="items" name="items">
-                    <datalist id="items">
-                        <option value="Elite">
-                        <option value="Pro">
-                        <option value="Live">
-                    </datalist>
+                <div class="select">
+
+                    <select name="slct" id="slct">
+                        <option>Membership Plans</option>
+                        <option value="1">Elite</option>
+                        <option value="2">Pro</option>
+                        <option value="3">Live</option>
+                    </select>
                 </div>
 
                 <div class="inputBoxx">
                     <textarea name="" id="" cols="10" rows="6"></textarea>
-                    <span>Any message</span>
+                    <span><i class="fa-solid fa-message"></i> Any message</span>
                 </div>
 
                 <button class="btn">Submit</button>
