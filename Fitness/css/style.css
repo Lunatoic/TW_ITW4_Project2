@@ -478,7 +478,7 @@ h1{
 }
 .grid3{
     display: grid;
-    grid-template-columns:auto auto;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));;
     grid-gap: 60px;
     margin-top:4rem;
     

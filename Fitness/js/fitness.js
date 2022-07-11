@@ -3,14 +3,14 @@ let headerScrolled = document.querySelector('.headerScrolled');
 let about = document.querySelector('#about');
 let home = document.querySelector('.home');
 
-// about.addEventListener('wheel', ()=> {
-//     console.log('about');
-//         header.classList.add("headerScrolled");
-// });
-// home.addEventListener('wheel', ()=> {
-//     console.log('home');
-//         header.classList.remove("headerScrolled");
-// });
+about.addEventListener('wheel', ()=> {
+    console.log('about');
+        header.classList.add("headerScrolled");
+});
+home.addEventListener('wheel', ()=> {
+    console.log('home');
+        header.classList.remove("headerScrolled");
+});
 
 const swiper = new Swiper(".swiper", {
     autoplay: {
