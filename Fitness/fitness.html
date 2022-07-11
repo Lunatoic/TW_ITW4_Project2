@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="stylesheet" href="css/style.css">
     <title>gymFIT</title>
 </head>
@@ -15,30 +15,48 @@
 <body>
     <header class="header">
         <a href="index.html" class="logo">
-            <span>GYM</span>
-            <img src="images/mainLogo.jpg" alt="">
-            <span>FIT</span>
+            <img src="images/GYM (2).png" alt="">
         </a>
 
         <nav id="navbar">
             <a href="../index.html" class="navi">Home</a>
             <a href="../Fitness/fitness.html" class="navi">Fitness</a>
             <a href="../GALLERY/gallery.html" class="navi">Gallery</a>
-            <a href="" class="navi">Store</a>
+            <a href="#" class="navi">Store</a>
         </nav>
 
         <button>Get Fit</button>
 
     </header>
 
-    <section class="home" id="home">
-        <div class="content">
-            <h3>GYMFIT <span>FITNESS</span> CENTER</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem totam dolore aut voluptates rerum ab
-                a eveniet reprehenderit nobis, soluta esse consectetur optio minus est beatae ad natus illo et aliquid
-                qui.</p>
+    <div class="swiper">
+        <div class="swiper-wrapper">
+            <section class="home swiper-slide" id="home">
+                <div class="content">
+                    <h3>GYMFIT <span>FITNESS</span> CENTER</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem totam dolore aut voluptates rerum ab
+                        a eveniet reprehenderit nobis, soluta esse consectetur optio minus est beatae ad natus illo et aliquid
+                        qui.</p>
+                </div>
+            </section>
+            <section class="home swiper-slide" id="home1">
+                <div class="content">
+                    <h3>GYMFIT <span>FITNESS</span> CENTER</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem totam dolore aut voluptates rerum ab
+                        a eveniet reprehenderit nobis, soluta esse consectetur optio minus est beatae ad natus illo et aliquid
+                        qui.</p>
+                </div>
+            </section>
+            <section class="home swiper-slide" id="home2">
+                <div class="content">
+                    <h3>GYMFIT <span>FITNESS</span> CENTER</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem totam dolore aut voluptates rerum ab
+                        a eveniet reprehenderit nobis, soluta esse consectetur optio minus est beatae ad natus illo et aliquid
+                        qui.</p>
+                </div>
+            </section>
         </div>
-    </section>
+    </div>
 
     <section class="about" id="about">
         <div class="left-content">
@@ -393,6 +411,7 @@
         </section>
     </section>
 
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="js/fitness.js"></script>
 </body>
 

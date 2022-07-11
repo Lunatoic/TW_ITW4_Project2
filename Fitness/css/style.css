@@ -55,7 +55,7 @@ h1{
     display: flex;
     /* border: 2px solid red; */
     justify-content: space-between;
-    width: 100%;
+    width: 100vw;
     z-index: 1000;
 }
 
@@ -78,12 +78,24 @@ h1{
     align-items: center;
 }
 .header .logo img{
-    height: 3rem;
+    height: 3.5rem;
+    width: 7.5rem;
 }
 
 .header #navbar{
     display: flex;
     align-items: center; 
+}
+.header #navbar a:hover {
+    color: var(--main-color);
+    border-bottom: .1rem solid var(--main-color);
+    padding-bottom: .5rem;
+}
+
+.header #navbar a.active {
+    color: var(--main-color);
+    border-bottom: .1rem solid var(--main-color);
+    padding-bottom: .5rem;
 }
 /*header css ends*/ 
 
@@ -102,7 +114,7 @@ h1{
 .home::before{
     content: "";
     position: absolute;
-    background: url(../images/HomeBackground.jpg) no-repeat center center/cover;
+    background: url(../images/homeBackground1.jpg) no-repeat center center/cover;
     height: 100%;
     width: 100%;
     top: 0px;
@@ -111,7 +123,35 @@ h1{
     z-index: -1;
     filter: grayscale(65%);
 }
+#home1::before{
+    content: "";
+    position: absolute;
+    background: url(../images/homeBackground2.jpg) no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    opacity: 0.5;
+    z-index: -1;
+}
+#home2::before{
+    content: "";
+    position: absolute;
+    background: url(../images/homeBackground4.jpg) no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    opacity: 0.5;
+    z-index: -1;
+    filter: grayscale(45%);
+}
 .home:hover::before{
+    content: "";
+    filter: none;
+}
+
+#home2:hover::before{
     content: "";
     filter: none;
 }
@@ -140,6 +180,17 @@ h1{
     align-items: flex-end;
 }
 
+.swiper {
+    /* width: 95%; */
+    /* padding: 0px 8px; */
+    height: fit-content;
+}
+
+.swiper .swiper-button-prev,
+.swiper .swiper-button-next {
+    color: #fff;
+}
+
 /*about section css*/
 .about{
     display: flex;
@@ -156,6 +207,11 @@ h1{
     padding-top: 90px;
     padding-bottom: 110px;
     position: relative;
+    transition: all 0.3s ease 0s
+}
+.about .left-content .left-content-img img{
+    position: relative;
+    z-index: 9;
 }
 
 .about .left-content .left-content-text{
@@ -228,7 +284,7 @@ h1{
 
 .programs .programsContainer{
     display: grid;
-    grid-template-columns: repeat(2, 3fr);
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
     grid-gap: 5rem;
 }
 .programs .programsContainer .programItem{
@@ -275,7 +331,7 @@ h1{
 
 .trainers .trainersContainer{
     display: grid;
-    grid-template-columns: repeat(3 , 3fr);
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
     grid-row-gap: 3rem;
     justify-items: center;
 }
@@ -334,7 +390,7 @@ h1{
 }
 .grid{
     display:grid;
-    grid-template-columns: repeat(3,auto);
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
     grid-column-gap:6rem;
     grid-row-gap:4rem ;
     padding:2rem 4rem 2rem 4rem;
@@ -473,4 +529,42 @@ h1{
 .button:hover{
     background-color: rgb(173, 5, 5);
     letter-spacing:3px;
+}
+
+/*media query starts*/
+@media (max-width:992px){
+    .about{
+        flex-direction: column;
+    }
+
+    .about .left-content{
+        width: 100%;
+        text-align: center;
+    }
+
+    .about .left-content::after{
+        right: 50%;
+        top: 96%;
+        transform: rotate(225deg);
+    }
+
+    .about .right-content{
+        width: 100%;
+        padding: 24px 0px;
+    }
+
+    .pTrainers .pTrainerList .pTContent {
+        text-align: center;
+        align-items: center;
+    }
+    .pTrainers .pTrainerList .pTContent p{
+        font-size: 14px;
+    }
+    .button{
+        margin: 0px;
+        font-size: 14px;
+    }
+    .pTrainers .pTrainerList img {
+        height: 570px;
+    }
 }

@@ -17,9 +17,7 @@
 
   <header class="header">
     <a href="index.html" class="logo">
-      <span>GYM</span>
-      <img src="../Fitness/images/mainLogo.jpg" alt="">
-      <span>FIT</span>
+      <img src="../Fitness/images/GYM (2).png" alt="">
     </a>
 
     <nav id="navbar">
@@ -139,6 +137,14 @@
 
 
     });
+
+    var btns = document.getElementsByClassName("navi");
+    const currentLocation = location.href;
+    for (var i = 0; i < btns.length; i++) {
+      if (btns[i].href === currentLocation) {
+        btns[i].className = 'active';
+      }
+    }
   </script>
 
 
