@@ -671,7 +671,7 @@ footer .share a {
 }
 
 footer a:hover {
-    background-color: var(--main-color);
+    border-bottom:4px solid rgb(202, 5, 5) ;
 
 }
 
