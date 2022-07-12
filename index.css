@@ -217,7 +217,7 @@ section {
 }
 
 img {
-    max-width: 115%;
+    max-width: 100%;
     vertical-align: middle;
     border-style: none;
 }
@@ -718,7 +718,7 @@ footer .copyright .logo-bottom {
 @media only screen and (max-width: 768px) {
     nav {
         width: 50vw;
-        margin-left: 10rem;
+        /* margin-left: 10rem; */
     }
 
     .logo {
@@ -806,8 +806,9 @@ footer .copyright .logo-bottom {
         padding-top: 3rem;
 
     }
-
-
+    .home .content h1{
+        font-size: 3rem;
+    }
 }
 
 @media(max-width:768px) {
@@ -826,6 +827,11 @@ footer .copyright .logo-bottom {
 }
 
 @media (max-width:576px) {
+
+    .header{
+        display: none;
+    }
+
     footer .exerciseItem {
         font-size: 8px;
     }
