@@ -15,7 +15,6 @@
     text-decoration: none;
     text-transform: capitalize;
     transition: .2s linear;
-    /* overflow-x: hidden; */
 }
 
 body {
@@ -24,30 +23,40 @@ body {
     margin: 0;
     padding: 0;
     color: white;
+    overflow-x: hidden;
 }
-.header{
+
+.header {
     display: flex;
     width: 100%;
     flex-direction: column;
 }
-.header a{
+
+.header a {
     color: #fff;
-    margin: 1rem 1rem;
+    margin: 0.5rem;
     text-decoration: none;
 }
 
-.header .logo img{
+.header .logo img {
     height: 3.5rem;
     width: 7.5rem;
 }
-.header #navbar{
+
+.header #navbar.nav-sticky {
+    background: rgba(35, 35, 35, 1);
+    width: 100%;
+}
+
+.header #navbar {
     position: fixed;
     display: flex;
-    align-items: center; 
-    width: 99%;
+    align-items: center;
+    width: 100%;
     z-index: 1000;
     justify-content: space-between;
 }
+
 .header #navbar a:hover {
     color: var(--main-color);
     border-bottom: .1rem solid var(--main-color);
@@ -59,8 +68,8 @@ body {
     border-bottom: .1rem solid var(--main-color);
     padding-bottom: .5rem;
 }
- 
-header {
+
+.home {
     display: flex;
     /* padding: 20px 10px; */
     background-image: url('index_image/pic1.jpg');
@@ -71,11 +80,12 @@ header {
     height: 100vh;
     filter: grayscale(65%);
 }
-header:hover{
+
+header:hover {
     filter: none;
 }
 
-header .content {
+.home .content {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -83,28 +93,31 @@ header .content {
     text-align: center;
 }
 
-header .content h1 {
+.home .content h1 {
     font-size: 4rem;
     /* text-transform: uppercase; */
     color: #ffff;
 }
-.button1{
+
+.button1 {
     margin: 0px 0px 0px 90px;
-    padding: 8px 28px;
+    padding: 6px 24px;
     background-color: rgb(240, 25, 25);
     color: white;
     border-color: white;
-    font-size:20px;
+    font-size: 20px;
     cursor: pointer;
     letter-spacing: 1px;
     text-decoration: none;
     border-radius: 10px;
 
 }
-.button1:hover{
+
+.button1:hover {
     background-color: rgb(173, 5, 5);
-    letter-spacing:3px;
+    letter-spacing: 3px;
 }
+
 /* .btn {
     padding: 0.5rem 1.5rem;
     background-color: #ff1010;
@@ -395,10 +408,10 @@ h3 {
     border: none;
     margin: 24px auto;
 } */
-.card_button{
+.card_button {
     padding: 8px;
     border-radius: 50px;
-    background:rgb(240, 25, 25);
+    background: rgb(240, 25, 25);
     color: white;
     font-weight: bold;
     cursor: pointer;
@@ -407,10 +420,12 @@ h3 {
     margin: 24px auto;
 
 }
-.card_button:hover{
+
+.card_button:hover {
     background-color: rgb(173, 5, 5);
-    letter-spacing:2px;
+    letter-spacing: 2px;
 }
+
 /* story */
 
 .container_str {
@@ -422,43 +437,46 @@ h3 {
     margin-right: auto;
     margin-left: auto;
 }
+
 .text-center {
-    text-align: center!important;
+    text-align: center !important;
     padding-top: 20px;
 }
+
 .ss-bl-1 p {
-    color:#7b7b7b;
+    color: #7b7b7b;
     padding: 10px;
     border-left: 1px solid white;
     margin-bottom: 20px;
-  }
-  
-  .ss-bl-1 img {
+}
+
+.ss-bl-1 img {
     height: 150%;
     width: 100%;
     border-radius: 50%;
-  }
-  
-  .cust-name {
+}
+
+.cust-name {
     margin-top: 25px;
-  }
-  
-  .cust-type {
+}
+
+.cust-type {
     margin-top: 5px;
     color: #bbb;
     margin-left: 20px;
-  }
+}
 
-  /*followers section css starts*/
+/*followers section css starts*/
 
-  .followers{
+.followers {
     background: url(images/pexels-victor-freitas-2261485.jpg);
     background-size: cover;
     background-position: center;
     /* height: 500px; */
     /* filter: sepia(75%); */
-  }
-  .counter{
+}
+
+.counter {
     display: flex;
     flex-wrap: wrap;
     margin-right: -15px;
@@ -467,141 +485,159 @@ h3 {
     justify-content: center;
     align-items: center;
     /* height: 500px; */
-  }
-  .counter .encounter{
+}
+
+.counter .encounter {
     text-align: center;
     margin: 0px 25px;
     font-size: 64px;
-  }
-  .counter .encounter span{
+}
+
+.counter .encounter span {
     display: block;
     font-size: 16px;
     margin-top: 14px;
     padding: 0px 10px;
     text-shadow: 1px 1px 6px yellow;
-  }
-
-  .name{
-    font-size:24px;
-    padding-top:2rem;
-    line-height: 0.9rem;
-    
- 
- 
- }
- .sub-name{
-     font-size:16px;
-     font-style: italic;
-     color:rgb(192, 189, 189);
- }
- 
- .container{
-     height:60vh;
-     background-image: url('./Fitness/images/readyforchange.PNG');
-     background-repeat: no-repeat;
-     
-     background-size:100% 100%;
- }
- .color{
-     background-color:white;
- }
- .changes{
-     font-style:italic;
-     font-size: larger;
-     color:white;
-     font-size: 50px;
-     font-weight: 700;
-     padding:6rem 0rem 2rem 4rem;
- }
- .changes1{
-     font-size:20px;
-     font-weight: bold;
-     color:white;
-     padding: 0rem 2rem 2rem 4rem;
-     
- 
- 
- }
- .button{
-     margin: 0px 0px 0px 100px;
-     padding: 10px 30px;
-     background-color: rgb(240, 25, 25);
-     color: white;
-     border-color: white;
-     font-size:20px;
-     cursor: pointer;
-     letter-spacing: 1px;
-     text-decoration: none;
- 
- }
- .button:hover{
-     background-color: rgb(173, 5, 5);
-     letter-spacing:3px;
-     text-decoration: none;
-     color:white;
- }
- 
-/* footer css start */
-footer .gridcontainer{
-    display: grid;
-    grid-template-columns: repeat(5,auto);
-    grid-column-gap:3rem;
-    padding-left:4rem;
-    padding-right:2rem;
-    padding-top:40px;
 }
-footer .gridcontaineritems{
+
+.name {
+    font-size: 24px;
+    padding-top: 2rem;
+    line-height: 0.9rem;
+
+
+
+}
+
+.sub-name {
+    font-size: 16px;
+    font-style: italic;
+    color: rgb(192, 189, 189);
+}
+
+.container {
+    height: 60vh;
+    background-image: url('./Fitness/images/readyforchange.PNG');
+    background-repeat: no-repeat;
+
+    background-size: 100% 100%;
+}
+
+.color {
+    background-color: white;
+}
+
+.changes {
+    font-style: italic;
+    font-size: larger;
+    color: white;
+    font-size: 50px;
+    font-weight: 700;
+    padding: 6rem 0rem 2rem 4rem;
+}
+
+.changes1 {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    padding: 0rem 2rem 2rem 4rem;
+
+
+
+}
+
+.button {
+    margin: 0px 0px 0px 100px;
+    padding: 10px 30px;
+    background-color: rgb(240, 25, 25);
+    color: white;
+    border-color: white;
+    font-size: 20px;
+    cursor: pointer;
+    letter-spacing: 1px;
+    text-decoration: none;
+
+}
+
+.button:hover {
+    background-color: rgb(173, 5, 5);
+    letter-spacing: 3px;
+    text-decoration: none;
+    color: white;
+}
+
+/* footer css start */
+footer .gridcontainer {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    grid-column-gap: 3rem;
+    padding-left: 4rem;
+    padding-right: 2rem;
+    padding-top: 40px;
+}
+
+footer .gridcontaineritems {
     text-align: justify;
 
 }
-footer .gridcontaineritems .gridcontentitems2{
-    color:white;
-    font-size:20px;
+
+footer .gridcontaineritems .gridcontentitems2 {
+    color: white;
+    font-size: 20px;
 
 }
-footer .gridcontaineritems .gridcontentitems2 .infoitem{
-    color:grey;
-    font-size:16px;
+
+footer .gridcontaineritems .gridcontentitems2 .infoitem {
+    color: grey;
+    font-size: 16px;
 }
-footer  .exerciseItem{
-    color:white;
-    line-height:2;
- 
+
+footer .exerciseItem {
+    color: white;
+    line-height: 2;
+
 }
-footer .gridcontentitems1 h3{
+
+footer .gridcontentitems1 h3 {
     padding-bottom: 2rem;
-    color:rgb(202, 5, 5);
+    color: rgb(202, 5, 5);
 }
 
 
-footer .news{
-    font-size:16px;
-    padding-bottom: 10px;;
-}
-footer i{
-    color:rgb(202, 5, 5);
-}
-footer .mailbox{
-    height:30px;
-width:200px;
-background-color: rgb(219, 218, 218);
-font-size:20px;
-padding-left:10px;
-border-radius: 10px;
-box-shadow:4px 4px 4px rgb(58, 57, 57);
+footer .news {
+    font-size: 16px;
+    padding-bottom: 10px;
+    ;
 }
 
-footer .workinghrs{
+footer i {
+    color: rgb(202, 5, 5);
+}
+
+footer .mailbox {
+    height: 30px;
+    width: 200px;
+    background-color: rgb(219, 218, 218);
+    font-size: 20px;
+    padding-left: 10px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 4px rgb(58, 57, 57);
+}
+
+footer .workinghrs {
     font-size: 20px;
     font-weight: 700;
     padding-top: 40px;
-    color:rgb(202, 5, 5)
+    color: rgb(202, 5, 5)
 }
-footer .time{
+
+footer .time {
     padding-top: 10px;
     line-height: 1.4;
 
 }
+
 footer .share {
     padding: 1rem 0;
 }
@@ -610,46 +646,51 @@ footer .follow {
     color: rgb(202, 5, 5);
     font-size: 20px;
     font-weight: 700;
-     
+
 
 }
-.gymname h2{
+
+.gymname h2 {
     padding-top: 1rem;
     padding-bottom: 1rem;
     color: rgb(202, 5, 5);
 }
-.gymnamecontent{
+
+.gymnamecontent {
     line-height: 1.4;
 }
+
 footer .share a {
-     height:2rem;
-     width: 2rem;
+    height: 2rem;
+    width: 2rem;
     font-size: 2rem;
     color: #fff;
-    border:white;
+    border: white;
     /* border: var(--border); */
     border-radius: 50%;
 }
 
 footer a:hover {
     background-color: var(--main-color);
-    
+
 }
 
 footer {
     position: relative;
     bottom: 0;
     width: 100%;
-    background-color:black;
+    background-color: black;
     background-attachment: fixed;
     padding: 1rem 0;
     text-align: center;
-    color:white;
+    color: white;
 }
-footer p{
-    color:grey;
-    padding-top:70px;
+
+footer p {
+    color: grey;
+    padding-top: 70px;
 }
+
 footer .copyright a {
     display: inline-block;
     font-weight: 700;
@@ -661,7 +702,7 @@ footer .copyright a {
 }
 
 footer .copyright a:hover {
-    color:rgb(224, 34, 34);
+    color: rgb(224, 34, 34);
     font-weight: 800;
 }
 
@@ -670,148 +711,182 @@ footer .copyright .logo-bottom {
     width: 30px;
     vertical-align: middle;
 }
-  /*followers section css ends*/
+
+/*followers section css ends*/
 
 
-  @media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
     nav {
-      width: 50vw;
-      margin-left: 10rem;
+        width: 50vw;
+        margin-left: 10rem;
     }
+
     .logo {
-      height: 2rem;
+        height: 2rem;
     }
+
     li {
-      height: 2rem;
-      width: 2rem;
+        height: 2rem;
+        width: 2rem;
     }
-    li > span:nth-child(1) {
-      font-size: 1rem;
+
+    li>span:nth-child(1) {
+        font-size: 1rem;
     }
+
     a {
-      font-size: 0.8rem;
+        font-size: 0.8rem;
     }
+
     header .content h1 {
-      font-size: 3rem;
+        font-size: 3rem;
     }
+
     /* .btn {
       font-size: 1rem;
     } */
     .about-text {
-      text-align: center;
+        text-align: center;
     }
+
     .about-text h2 {
-      font-size: 32px;
-      margin-bottom: 36px;
+        font-size: 32px;
+        margin-bottom: 36px;
     }
+
     .about-text p.long-details {
-      margin-bottom: 0px;
+        margin-bottom: 0px;
     }
+
     .chooseus-section {
-      text-align: center;
+        text-align: center;
     }
+
     .container_content {
-      width: 95%;
-      margin-bottom: 60vh;
-      display: inline-block;
+        width: 95%;
+        margin-bottom: 60vh;
+        display: inline-block;
     }
+
     .card_container {
-      display: inline-block;
+        display: inline-block;
     }
+
     .card {
-      width: 100%;
-      margin-bottom: 20px;
+        width: 100%;
+        margin-bottom: 20px;
     }
+
     .ss-bl-1 img {
-      height: 150%;
-      width: 35%;
-      border-radius: 50%;
+        height: 150%;
+        width: 35%;
+        border-radius: 50%;
     }
+
     .container_str {
-      padding: 2rem 0rem;
-      height: auto;
-      padding-left: 15px;
+        padding: 2rem 0rem;
+        height: auto;
+        padding-left: 15px;
     }
+
     .cust-name {
-      margin: 0px 0px 5rem 50%;
+        margin: 0px 0px 5rem 50%;
     }
-  }
-  @media (max-width:1060px){
-    footer .gridcontainer{
-        grid-template-columns:repeat(3,auto);
+}
+
+@media (max-width:1060px) {
+    footer .gridcontainer {
+        grid-template-columns: repeat(3, auto);
         grid-column-gap: 3rem;
         padding-right: 6rem;
     }
-     footer .gridcontaineritems{
-        
-        padding-top:3rem;
-        
+
+    footer .gridcontaineritems {
+
+        padding-top: 3rem;
+
     }
-  
-   
- }
- @media(max-width:768px){
-    footer .exerciseItem{
-        font-size:12px;
-    }
-    footer .gridcontainer{
-        padding-right:2rem;
-        padding-left:2rem;
-    }
-    
-    footer div.share{
-        font-size:4px;
-    }
- }
- @media (max-width:576px){
-    footer .exerciseItem{
-        font-size:8px;
-    }
-    footer .news{
-        font-size:10px;
-    }
-    footer .gymnamecontent{
-        font-size:12px;
-    }
-   footer .gridcontainer{
-    grid-column-gap:1rem;
-   }
-   footer div.share{
-    font-size:2px;
+
+
 }
- }
-@media(max-width:520px){
-    footer .gridcontainer{
-        grid-template-columns:repeat(2,auto);
+
+@media(max-width:768px) {
+    footer .exerciseItem {
+        font-size: 12px;
+    }
+
+    footer .gridcontainer {
+        padding-right: 2rem;
+        padding-left: 2rem;
+    }
+
+    footer div.share {
+        font-size: 4px;
+    }
+}
+
+@media (max-width:576px) {
+    footer .exerciseItem {
+        font-size: 8px;
+    }
+
+    footer .news {
+        font-size: 10px;
+    }
+
+    footer .gymnamecontent {
+        font-size: 12px;
+    }
+
+    footer .gridcontainer {
+        grid-column-gap: 1rem;
+    }
+
+    footer div.share {
+        font-size: 2px;
+    }
+}
+
+@media(max-width:520px) {
+    footer .gridcontainer {
+        grid-template-columns: repeat(2, auto);
         grid-column-gap: 3rem;
-        padding-left:3rem;
-        padding-right:3rem;
+        padding-left: 3rem;
+        padding-right: 3rem;
     }
-    footer .exercise{
-        line-height:4;
+
+    footer .exercise {
+        line-height: 4;
     }
-    footer .exerciseItem{
-        font-size:14px;
+
+    footer .exerciseItem {
+        font-size: 14px;
     }
 }
-@media(max-width:360px){
-    footer .gridcontainer{
-        grid-template-columns:auto;
+
+@media(max-width:360px) {
+    footer .gridcontainer {
+        grid-template-columns: auto;
     }
-    footer .gridcontaineritems h3{
-        font-size:22px;
+
+    footer .gridcontaineritems h3 {
+        font-size: 22px;
     }
-    footer .gridcontaineritems h2{
-        font-size:30px;
-}
-    footer .exerciseItem{
-        font-size:18px;
+
+    footer .gridcontaineritems h2 {
+        font-size: 30px;
     }
-    footer .news{
-        font-size:18px;
+
+    footer .exerciseItem {
+        font-size: 18px;
     }
-    footer .gymnamecontent{
-        font-size:18px;
+
+    footer .news {
+        font-size: 18px;
+    }
+
+    footer .gymnamecontent {
+        font-size: 18px;
     }
 
 }
