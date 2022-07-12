@@ -510,26 +510,48 @@ h1{
 
 .button1{
     line-height: 2;
-    font-size:13px;
-    color:grey;
+    font-size:16px;
+    color:rgb(211, 8, 8);
     text-decoration: none;
 }
 .grid3 .button1:hover{
-    color:rgb(211, 8, 8);
+   
+    letter-spacing:1px;
 
 }
 .grid3 .blogimg{
    position: relative;
    border-radius: 10px;
-    width: 470px;
+    width: 440px;
     margin-left: 82px;
-     
+    text-align: center;
+    display: block;
 }
 .grid3 .img-content{
            position:absolute;
-           width:300px;
-           margin-left: 20px;
-           /* padding-bottom: 100px;; */
+           top:10%;
+           left:10%;
+           color:white;
+           text-shadow:1px 1px #403f3e;
+           display: none;
+
+          
+}
+.grid3 .img1{
+    width:470px;
+    height:200px;
+}
+.grid3 .img1:hover {
+    display: none;
+}
+.grid3 .img1:hover .img-content{
+    position: absolute;
+    top:0%;
+    left:0%;
+    display: inline-block;
+    background-color: black;
+    overflow: auto;
+
 }
 .grid3 .gridcontent {
     background: #191a19;
