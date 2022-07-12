@@ -288,7 +288,28 @@ h1 {
     font-size: 59px;
     color: var(--main-color);
 }
+<<<<<<< HEAD
 
+=======
+.button10{
+    margin: 0px 0px 0px 100px;
+    padding: 12px 22px;
+    height: 49px;
+    background-color: rgb(240, 25, 25);
+    color: white;
+    border-color: white;
+    font-size:20px;
+    cursor: pointer;
+    letter-spacing: 1px;
+    text-decoration: none;
+    border-radius: 10px;
+
+}
+.button10:hover{
+    background-color: rgb(173, 5, 5);
+    letter-spacing:3px;
+}
+>>>>>>> 5ee8f7dd6eb23e6d721fc466e315fd557a4c1255
 /*about section css ends*/
 
 /*program section css starts*/
@@ -417,7 +438,14 @@ h1 {
 
 
 /*blog section css starts*/
+<<<<<<< HEAD
 #testimonies {
+=======
+.blogss{
+    font-size:20px;
+}
+#testimonies{
+>>>>>>> 5ee8f7dd6eb23e6d721fc466e315fd557a4c1255
     position: relative;
 }
 
@@ -523,35 +551,101 @@ h1 {
 
 .grid3 {
     display: grid;
+<<<<<<< HEAD
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
     grid-gap: 60px;
     margin-top: 4rem;
 
 
+=======
+    grid-template-columns:auto auto;
+    grid-column-gap:4rem;
+    grid-row-gap: 8rem;
+    margin-top:4rem;
+    margin-bottom: 10rem;
+    
+   
+>>>>>>> 5ee8f7dd6eb23e6d721fc466e315fd557a4c1255
 }
 
+
+
+
+.button1{
+    line-height: 2;
+    font-size:16px;
+    color:rgb(211, 8, 8);
+    text-decoration: none;
+}
+.grid3 .button1:hover{
+   
+    letter-spacing:1px;
+
+}
+.grid3 .blogimg{
+   position: relative;
+   border-radius: 10px;
+    width: 440px;
+    margin-left: 82px;
+    text-align: center;
+    display: block;
+}
+.grid3 .img-content{
+           position:absolute;
+           top:10%;
+           left:10%;
+           color:white;
+           text-shadow:1px 1px #403f3e;
+           display: none;
+
+          
+}
+.grid3 .img1{
+    width:470px;
+    height:200px;
+}
+.grid3 .img1:hover {
+    display: none;
+}
+.grid3 .img1:hover .img-content{
+    position: absolute;
+    top:0%;
+    left:0%;
+    display: inline-block;
+    background-color: black;
+    overflow: auto;
+
+}
 .grid3 .gridcontent {
     background: #191a19;
-    width: 60%;
-    position: relative;
+    width:300px;
+    position: absolute;
     z-index: 2;
-    margin: 0px 90px;
+    margin: 0px 160px;
     text-align: center;
     margin-top: -40px;
     padding: 6px 30px;
+<<<<<<< HEAD
     height: 140px;
     border-radius: 10px;
     ;
+=======
+    height:130px;
+    border-radius: 10px;;
+>>>>>>> 5ee8f7dd6eb23e6d721fc466e315fd557a4c1255
     box-shadow: 0px 2px 6px rgb(151 149 149);
     color: whitesmoke;
 
 
 }
 
+<<<<<<< HEAD
 /* .grid3 .gridcontent:hover{
     background:white;
     
 } */
+=======
+>>>>>>> 5ee8f7dd6eb23e6d721fc466e315fd557a4c1255
 
 .grid3 .life {
     text-align: center;
@@ -562,6 +656,7 @@ h1 {
 
 .grid3 .lifecontent {
     font-size: 17px;
+<<<<<<< HEAD
     line-height: 2.4;
     color: whitesmoke;
 }
@@ -579,6 +674,11 @@ h1 {
 
 }
 
+=======
+    line-height:1.4;
+    color:whitesmoke;
+}
+>>>>>>> 5ee8f7dd6eb23e6d721fc466e315fd557a4c1255
 /* .grid3 .griditem .blogimg{
     width:34%
 } */
@@ -701,11 +801,19 @@ h1 {
 
 footer .gridcontainer {
     display: grid;
+<<<<<<< HEAD
     grid-template-columns: repeat(5, auto);
     grid-column-gap: 4rem;
     padding-left: 4rem;
     padding-right: 2rem;
     padding-top: 40px;
+=======
+    grid-template-columns: repeat(5,auto);
+    grid-column-gap:3rem;
+    padding-left:4rem;
+    padding-right:2rem;
+    padding-top:40px;
+>>>>>>> 5ee8f7dd6eb23e6d721fc466e315fd557a4c1255
 }
 
 footer .gridcontaineritems {
@@ -723,11 +831,18 @@ footer .gridcontaineritems .gridcontentitems2 .infoitem {
     color: grey;
     font-size: 16px;
 }
+<<<<<<< HEAD
 
 footer .exerciseItem {
     color: white;
     line-height: 1.8;
 
+=======
+footer  .exerciseItem{
+    color:white;
+    line-height:2;
+ 
+>>>>>>> 5ee8f7dd6eb23e6d721fc466e315fd557a4c1255
 }
 
 footer .gridcontentitems1 h3 {
@@ -735,10 +850,13 @@ footer .gridcontentitems1 h3 {
     color: rgb(202, 5, 5);
 }
 
+<<<<<<< HEAD
 footer .innerExerciseItem {
     color: grey;
 
 }
+=======
+>>>>>>> 5ee8f7dd6eb23e6d721fc466e315fd557a4c1255
 
 footer .news {
     font-size: 16px;
@@ -784,8 +902,13 @@ footer .follow {
 
 
 }
+<<<<<<< HEAD
 
 .gymname h1 {
+=======
+.gymname h2{
+    padding-top: 1rem;
+>>>>>>> 5ee8f7dd6eb23e6d721fc466e315fd557a4c1255
     padding-bottom: 1rem;
     color: rgb(202, 5, 5);
 }
@@ -806,8 +929,8 @@ footer .share a {
 
 footer a:hover {
     background-color: var(--main-color);
+    
 }
-
 
 footer {
     position: relative;
@@ -846,6 +969,7 @@ footer .copyright .logo-bottom {
     vertical-align: middle;
 }
 
+<<<<<<< HEAD
 .mobile-nav{
     display: none;
 }
@@ -907,6 +1031,8 @@ footer .copyright .logo-bottom {
     }
    
 } */
+=======
+>>>>>>> 5ee8f7dd6eb23e6d721fc466e315fd557a4c1255
 
 /*media query starts*/
 @media (max-width:992px) {
@@ -969,6 +1095,7 @@ footer .copyright .logo-bottom {
 
 }
 
+<<<<<<< HEAD
 @media (max-width: 768px) {
     .home .content h3 {
         font-size: 2.5rem;
@@ -1026,4 +1153,84 @@ footer .copyright .logo-bottom {
         width: 312px;
         height: 240px;
     }
+=======
+ @media (max-width:1060px){
+    footer .gridcontainer{
+        grid-template-columns:repeat(3,auto);
+        grid-column-gap: 3rem;
+        padding-right: 6rem;
+    }
+     footer .gridcontaineritems{
+        
+        padding-top:3rem;
+        
+    }
+  
+   
+ }
+ @media(max-width:768px){
+    footer .exerciseItem{
+        font-size:12px;
+    }
+    footer .gridcontainer{
+        padding-right:2rem;
+        padding-left:2rem;
+    }
+    
+    footer div.share{
+        font-size:4px;
+    }
+ }
+ @media (max-width:576px){
+    footer .exerciseItem{
+        font-size:8px;
+    }
+    footer .news{
+        font-size:10px;
+    }
+    footer .gymnamecontent{
+        font-size:12px;
+    }
+   footer .gridcontainer{
+    grid-column-gap:1rem;
+   }
+   footer div.share{
+    font-size:2px;
+}
+ }
+@media(max-width:520px){
+    footer .gridcontainer{
+        grid-template-columns:repeat(2,auto);
+        grid-column-gap: 3rem;
+        padding-left:3rem;
+        padding-right:3rem;
+    }
+    footer .exercise{
+        line-height:4;
+    }
+    footer .exerciseItem{
+        font-size:14px;
+    }
+}
+@media(max-width:360px){
+    footer .gridcontainer{
+        grid-template-columns:auto;
+    }
+    footer .gridcontaineritems h3{
+        font-size:22px;
+    }
+    footer .gridcontaineritems h2{
+        font-size:30px;
+}
+    footer .exerciseItem{
+        font-size:18px;
+    }
+    footer .news{
+        font-size:18px;
+    }
+    footer .gymnamecontent{
+        font-size:18px;
+    }
+
+>>>>>>> 5ee8f7dd6eb23e6d721fc466e315fd557a4c1255
 }
