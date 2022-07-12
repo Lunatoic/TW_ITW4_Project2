@@ -277,8 +277,9 @@ h1{
 }
 .button10{
     margin: 0px 0px 0px 100px;
-    padding: 12px 22px;
-    height: 49px;
+    padding: 6px 16px;
+    height: 38px;
+    width:100px;
     background-color: rgb(240, 25, 25);
     color: white;
     border-color: white;
