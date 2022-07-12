@@ -59,7 +59,7 @@ body {
     border-bottom: .1rem solid var(--main-color);
     padding-bottom: .5rem;
 }
-
+ 
 header {
     display: flex;
     /* padding: 20px 10px; */
