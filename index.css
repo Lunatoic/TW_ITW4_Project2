@@ -516,7 +516,7 @@ h3 {
     color: rgb(192, 189, 189);
 }
 
-.container {
+.waiting {
     height: 60vh;
     background-image: url('./Fitness/images/readyforchange.PNG');
     background-repeat: no-repeat;
@@ -547,7 +547,7 @@ h3 {
 
 }
 
-.button {
+.buttonsignup {
     margin: 0px 0px 0px 100px;
     padding: 10px 30px;
     background-color: rgb(240, 25, 25);
@@ -560,7 +560,7 @@ h3 {
 
 }
 
-.button:hover {
+.buttonsignup:hover {
     background-color: rgb(173, 5, 5);
     letter-spacing: 3px;
     text-decoration: none;
