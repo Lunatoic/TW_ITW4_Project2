@@ -403,6 +403,9 @@ h1{
 
 
 /*blog section css starts*/
+.blogss{
+    font-size:20px;
+}
 #testimonies{
     position: relative;
 }
@@ -693,7 +696,7 @@ h1{
 footer .gridcontainer{
     display: grid;
     grid-template-columns: repeat(5,auto);
-    grid-column-gap:4rem;
+    grid-column-gap:3rem;
     padding-left:4rem;
     padding-right:2rem;
     padding-top:40px;
@@ -713,17 +716,14 @@ footer .gridcontaineritems .gridcontentitems2 .infoitem{
 }
 footer  .exerciseItem{
     color:white;
-    line-height:1.8;
+    line-height:2;
  
 }
 footer .gridcontentitems1 h3{
     padding-bottom: 2rem;
     color:rgb(202, 5, 5);
 }
-footer  .innerExerciseItem{
-    color:grey;
-    
-}
+
 
 footer .news{
     font-size:16px;
@@ -764,7 +764,8 @@ footer .follow {
      
 
 }
-.gymname h1{
+.gymname h2{
+    padding-top: 1rem;
     padding-bottom: 1rem;
     color: rgb(202, 5, 5);
 }
@@ -783,8 +784,8 @@ footer .share a {
 
 footer a:hover {
     background-color: var(--main-color);
+    
 }
-
 
 footer {
     position: relative;
@@ -821,24 +822,7 @@ footer .copyright .logo-bottom {
     vertical-align: middle;
 }
 
-/* @media (max-width:820px){
-    footer .gridcontainer{
-        grid-template-columns:repeat(3,auto);
-        grid-column-gap: 3rem;
-    }
-     footer .gridcontaineritems{
-        
-        padding-top:3rem;
-        
-    }
-    footer #getinfo{
-       margin-auto;
-    }
-    footer #letter{
-        margin:auto;
-    }
-   
-} */
+
 /*media query starts*/
 @media (max-width:992px){
     .about{
@@ -875,4 +859,84 @@ footer .copyright .logo-bottom {
     .pTrainers .pTrainerList img {
         height: 570px;
     }
+}
+
+ @media (max-width:1060px){
+    footer .gridcontainer{
+        grid-template-columns:repeat(3,auto);
+        grid-column-gap: 3rem;
+        padding-right: 6rem;
+    }
+     footer .gridcontaineritems{
+        
+        padding-top:3rem;
+        
+    }
+  
+   
+ }
+ @media(max-width:768px){
+    footer .exerciseItem{
+        font-size:12px;
+    }
+    footer .gridcontainer{
+        padding-right:2rem;
+        padding-left:2rem;
+    }
+    
+    footer div.share{
+        font-size:4px;
+    }
+ }
+ @media (max-width:576px){
+    footer .exerciseItem{
+        font-size:8px;
+    }
+    footer .news{
+        font-size:10px;
+    }
+    footer .gymnamecontent{
+        font-size:12px;
+    }
+   footer .gridcontainer{
+    grid-column-gap:1rem;
+   }
+   footer div.share{
+    font-size:2px;
+}
+ }
+@media(max-width:520px){
+    footer .gridcontainer{
+        grid-template-columns:repeat(2,auto);
+        grid-column-gap: 3rem;
+        padding-left:3rem;
+        padding-right:3rem;
+    }
+    footer .exercise{
+        line-height:4;
+    }
+    footer .exerciseItem{
+        font-size:14px;
+    }
+}
+@media(max-width:360px){
+    footer .gridcontainer{
+        grid-template-columns:auto;
+    }
+    footer .gridcontaineritems h3{
+        font-size:22px;
+    }
+    footer .gridcontaineritems h2{
+        font-size:30px;
+}
+    footer .exerciseItem{
+        font-size:18px;
+    }
+    footer .news{
+        font-size:18px;
+    }
+    footer .gymnamecontent{
+        font-size:18px;
+    }
+
 }
