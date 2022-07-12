@@ -587,8 +587,6 @@ h1 {
     color: white;
     text-shadow: 1px 1px #403f3e;
     display: none;
-
-
 }
 
 .grid3 .img1 {
@@ -596,11 +594,11 @@ h1 {
     height: 200px;
 }
 
-.grid3 .img1:hover {
+/* .grid3 .img1:hover {
     display: none;
-}
+} */
 
-.grid3 .img1:hover .img-content {
+/* .grid3 .img1:hover .img-content {
     position: absolute;
     top: 0%;
     left: 0%;
@@ -608,7 +606,8 @@ h1 {
     background-color: black;
     overflow: auto;
 
-}
+} */
+
 
 .grid3 .gridcontent {
     background: #191a19;
@@ -657,6 +656,10 @@ h1 {
 .grid3 .button1:hover {
     color: rgb(211, 8, 8);
 
+}
+
+#btw1:hover ~ .img-content{
+    display: block;
 }
 
 /* .grid3 .griditem .blogimg{
