@@ -48,6 +48,14 @@ function counter() {
     
 }
 
+   $(window).scroll(function () {
+        if ($(this).scrollTop() > 74) {
+            $('#navbar').addClass('nav-sticky');
+        } else {
+            $('#navbar').removeClass('nav-sticky');
+        }
+    });
+
 success.addEventListener('wheel', counter);
 // pass.addEventListener('wheel', counter);
 
