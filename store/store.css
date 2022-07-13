@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+:root {
+    --main-color: rgb(240, 25, 25);
+    --bg: #191a19;
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+html {
+    /* font-size: 62.5%; */
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+    padding:40px;
+}
+
+body {
+    background:white;
+    
+}
+
+.store-heading{
+    font-size:40px;
+    color:black;
+    font-weight: 700;
+    text-align: center;
+    padding-bottom: 40px;
+
+
+}
+
+.protein{
+   
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-flow: wrap;
+
+}
+
+.store h3{
+    text-align: center;
+    font-size:20px;
+    padding-bottom: 40px;;
+}
+.spotlight1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap;
+
+}
+.best-heading{
+    font-size:40px;
+    color:black;
+    font-weight: 700;
+    text-align: center;
+    padding-top:20px;
+
+}
+.store-sub-heading{
+    color: gray;
+    font-size:12px;
+    text-align: center;
+    padding-bottom: 10px;;
+}
+.bestseller1{
+    display:flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    flex-flow: wrap;
+
+}
+.fitkit{
+    font-size:20px;
+    color:black;
+    text-align: center;
+}
+.con{
+    font-size:16px;
+    color:gray;
+    text-align: center;
+}
+.price1{
+    font-size:20px;
+    font-weight: 700;
+    color:black;
+    text-align: center;
+}
+.price1 .rs{
+    font-size:18px;
+    text-decoration: line-through;
+    font-weight: lighter;
+}
+.off{
+    color:red;
+    font-size:18px;
+}
+.bestseller #smart{
+    padding-top:30px;
+    padding-bottom: 30px;
+}
+
+
+
+/* footer css */
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    background-attachment: fixed;
+    text-align: center;
+    color: white;
+    margin-top:70px;
+   
+
+    
+}
+footer .gridcontainer {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    grid-column-gap: 3rem;
+    padding-left: 4rem;
+    padding-right: 2rem;
+    padding-top: 40px;
+}
+
+footer .gridcontaineritems {
+    text-align: justify;
+
+}
+
+footer .gridcontaineritems .gridcontentitems2 {
+    color: white;
+    font-size: 20px;
+
+}
+
+footer .gridcontaineritems .gridcontentitems2 .infoitem {
+    color: grey;
+    font-size: 16px;
+}
+
+footer .exerciseItem {
+    color: white;
+    line-height: 2;
+
+}
+
+footer .gridcontentitems1 h3 {
+    padding-bottom: 2rem;
+    color: rgb(202, 5, 5);
+}
+
+
+footer .news {
+    font-size: 16px;
+    padding-bottom: 10px;
+    ;
+}
+
+footer i {
+    color: rgb(202, 5, 5);
+}
+
+footer .mailbox {
+    height: 30px;
+    width: 200px;
+    background-color: rgb(219, 218, 218);
+    font-size: 20px;
+    padding-left: 10px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 4px rgb(58, 57, 57);
+}
+
+footer .workinghrs {
+    font-size: 20px;
+    font-weight: 700;
+    padding-top: 40px;
+    color: rgb(202, 5, 5)
+}
+
+footer .time {
+    padding-top: 10px;
+    line-height: 1.4;
+
+}
+
+footer .share {
+    padding: 1rem 0;
+}
+
+footer .follow {
+    color: rgb(202, 5, 5);
+    font-size: 20px;
+    font-weight: 700;
+
+
+}
+
+.gymname h2 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    color: rgb(202, 5, 5);
+}
+
+.gymnamecontent {
+    line-height: 1.4;
+}
+
+footer .share a {
+    height: 2rem;
+    width: 2rem;
+    font-size: 2rem;
+    color: #fff;
+    border: white;
+    /* border: var(--border); */
+    border-radius: 50%;
+}
+
+footer a:hover {
+    border-bottom:4px solid rgb(202, 5, 5) ;
+    /* background-color: var(--main-color); */
+
+}
+
+
+
+footer p {
+    color: grey;
+    padding-top: 70px;
+}
+
+footer .copyright a {
+    display: inline-block;
+    font-weight: 700;
+    color: black;
+    background-color: white;
+    padding: 3px;
+    width: fit-content;
+    border-radius: 5px;
+}
+
+footer .copyright a:hover {
+    color: rgb(224, 34, 34);
+    font-weight: 800;
+}
+
+footer .copyright .logo-bottom {
+    height: 30px;
+    width: 30px;
+    vertical-align: middle;
+}
+@media (max-width:1060px) {
+    footer .gridcontainer {
+        grid-template-columns: repeat(3, auto);
+        grid-column-gap: 3rem;
+        padding-right: 6rem;
+    }
+
+    footer .gridcontaineritems {
+
+        padding-top: 3rem;
+
+    }
+
+
+}
+
+@media(max-width:768px) {
+    footer .exerciseItem {
+        font-size: 12px;
+    }
+
+    footer .gridcontainer {
+        padding-right: 2rem;
+        padding-left: 2rem;
+    }
+
+    footer div.share {
+        font-size: 4px;
+    }
+}
+
+@media (max-width:576px) {
+    footer .exerciseItem {
+        font-size: 8px;
+    }
+
+    footer .news {
+        font-size: 10px;
+    }
+
+    footer .gymnamecontent {
+        font-size: 12px;
+    }
+
+    footer .gridcontainer {
+        grid-column-gap: 1rem;
+    }
+
+    footer div.share {
+        font-size: 2px;
+    }
+}
+
+@media(max-width:520px) {
+    footer .gridcontainer {
+        grid-template-columns: repeat(2, auto);
+        grid-column-gap: 3rem;
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+
+    footer .exercise {
+        line-height: 4;
+    }
+
+    footer .exerciseItem {
+        font-size: 14px;
+    }
+}
+
+@media(max-width:360px) {
+    footer .gridcontainer {
+        grid-template-columns: auto;
+    }
+
+    footer .gridcontaineritems h3 {
+        font-size: 22px;
+    }
+
+    footer .gridcontaineritems h2 {
+        font-size: 30px;
+    }
+
+    footer .exerciseItem {
+        font-size: 18px;
+    }
+
+    footer .news {
+        font-size: 18px;
+    }
+
+    footer .gymnamecontent {
+        font-size: 18px;
+    }
+
+}
