@@ -11,15 +11,17 @@ html{
     
 }
 .heading{
-    margin:80px;
-    font-size:40px;
-    color:rgb(156, 156, 156);
-        font-weight: 700px;;
-    text-shadow:2px 2px black;
+    margin:2rem;
+    /* margin-left:8rem; */
+    font-size:36px;
+    color:rgb(156, 9, 9);
+    font-weight:bolder;
+    text-indent:3rem;
+    text-shadow:2px 2px 10px  rgb(230, 207, 207);
 }
 form{
     background-color:rgb(37, 37, 37);
-    margin-left:30px;
+    margin-left:100px;
     border-radius: 10px;
     /* box-shadow: 4px 4px 6px 2px #403f3e , -4px -4px 6px 2px #403f3e;; */ 
    
@@ -172,15 +174,27 @@ select {
    
  
 }
-@media (max-width:900px){
+@media (max-width:942px){
     form.inputbox{
-        width:90%;
+        /* width:80%; */
+        margin:auto;
         }
     div.heading{
         text-align: center;
     }
     }
-    @media(max-width:717px)and (min-width:560px){
+@media(max-width:660px){
+    form.inputbox{
+        
+        margin:auto;
+        
+         }
+         .row .inputBoxx{
+             width:100%;
+             flex-basis: 100%;
+             padding-right: 0px;}
+}
+@media(max-width:717px)and (min-width:560px){
         div .heading{
             font-size:28px;
 
@@ -219,7 +233,7 @@ select {
         font-size:26px;
         line-height: 1.4;
         
-        text-shadow: 3px 3px black;
+        text-shadow:1px 1px 6px rgb(230, 207, 207);
     }
     form.inputbox{
         width:98%;
