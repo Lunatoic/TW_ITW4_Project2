@@ -870,23 +870,20 @@ footer .copyright .logo-bottom {
     }
 }
 
-@media(max-width:360px) {
-    footer .gridcontainer {
-        grid-template-columns: auto;
+@media (max-width:470px){
+    footer .gridcontainer{
+        display: flex;
+        flex-direction: column;
     }
-
     footer .gridcontaineritems h3 {
         font-size: 22px;
     }
-
     footer .gridcontaineritems h2 {
         font-size: 30px;
     }
-
     footer .exerciseItem {
         font-size: 18px;
     }
-
     footer .news {
         font-size: 18px;
     }
@@ -895,4 +892,5 @@ footer .copyright .logo-bottom {
         font-size: 18px;
     }
 
+    
 }
