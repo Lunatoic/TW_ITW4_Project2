@@ -574,8 +574,8 @@ h1 {
 .grid3 .blogimg {
     position: relative;
     border-radius: 10px;
-    width: 440px;
-    margin-left: 82px;
+    /* width: 440px; */
+    /* margin-left: 82px; */
     text-align: center;
     display: block;
 }
@@ -583,24 +583,27 @@ h1 {
 .grid3 .img-content {
     position: absolute;
     top: 10%;
-    left: 10%;
+    left: 26%;
     color: white;
-    text-shadow: 1px 1px #403f3e;
+    width: 48%;
+    text-shadow: 1px 1px black;
+    box-shadow: 0px 0px 34px 17px #b6a4a4;
+    transition: all 2.4s ease-in-out;
+    transform: scale(1);
     display: none;
-
-
 }
 
 .grid3 .img1 {
     width: 470px;
     height: 200px;
+    opacity: 0.8;
 }
 
-.grid3 .img1:hover {
+/* .grid3 .img1:hover {
     display: none;
-}
+} */
 
-.grid3 .img1:hover .img-content {
+/* .grid3 .img1:hover .img-content {
     position: absolute;
     top: 0%;
     left: 0%;
@@ -608,7 +611,8 @@ h1 {
     background-color: black;
     overflow: auto;
 
-}
+} */
+
 
 .grid3 .gridcontent {
     background: #191a19;
@@ -656,7 +660,7 @@ h1 {
 
 .grid3 .button1:hover {
     color: rgb(211, 8, 8);
-
+    cursor: pointer;
 }
 
 /* .grid3 .griditem .blogimg{
@@ -678,12 +682,12 @@ h1 {
 
 .grid4 {
     display: grid;
-    grid-template-columns: repeat(3, auto);
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     grid-column-gap: 10px;
     margin-top: 2rem;
     /* width: fit-content; */
     margin-left: 7rem;
-    margin-right: 6rem;
+    /* margin-right: 6rem; */
     /* justify-content: center; */
 
 }
@@ -1180,6 +1184,9 @@ footer .copyright .logo-bottom {
 
     footer .exerciseItem {
         font-size: 14px;
+    }
+    .grid4{
+        margin-left: 0rem;
     }
 }
 
