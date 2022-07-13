@@ -548,7 +548,7 @@ h1 {
 
 .grid3 {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(365px, 1fr));
     grid-column-gap:15rem;
     grid-row-gap: 8rem;
     margin-top: 4rem;
@@ -578,6 +578,7 @@ h1 {
     /* margin-left: 82px; */
     text-align: center;
     display: block;
+    z-index: -1;
 }
 
 .grid3 .img-content {
@@ -617,9 +618,9 @@ h1 {
 .grid3 .gridcontent {
     background: #191a19;
     width: 300px;
-    position: absolute;
+    /* position: absolute; */
     z-index: 2;
-    margin: 0px 160px;
+    margin: 0px auto;
     text-align: center;
     margin-top: -40px;
     padding: 6px 30px;
@@ -1187,6 +1188,9 @@ footer .copyright .logo-bottom {
     }
     .grid4{
         margin-left: 0rem;
+    }
+    .grid3 .img1{
+        width: 320px;
     }
 }
 
