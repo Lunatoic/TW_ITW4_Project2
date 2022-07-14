@@ -165,10 +165,6 @@ li>span:nth-child(2) {
     color: cornflowerblue;
 }
 
-li:hover span {
-    transform: translateY(-100%);
-}
-
 a {
     color: #ffff;
     text-decoration: none;
@@ -710,15 +706,59 @@ footer .copyright .logo-bottom {
     width: 30px;
     vertical-align: middle;
 }
-
 /*followers section css ends*/
+
+.mobile-nav {
+    display: none;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    background-color: var(--bg);
+}
+
+.mobile-nav ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mobile-nav li {
+    list-style-type: none;
+    height: 4rem;
+    width: 8rem;
+    overflow: hidden;
+}
+.mobile-nav li a{
+    color: #ff1010;
+}
+.mobile-nav li a:hover{
+    border-bottom: 2px solid var(--main-color);
+}
+
+.mobile-nav li>span {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+}
+
+.mobile-nav li>span:nth-child(1) {
+    color: #ff1010;
+    /* background-color: rgba(255,255,255,0.05); */
+    font-size: 2rem;
+}
+
+.mobile-nav li>span:nth-child(2) {
+    color: cornflowerblue;
+}
+
 
 
 @media only screen and (max-width: 768px) {
-    nav {
-        width: 50vw;
-        /* margin-left: 10rem; */
-    }
 
     .logo {
         height: 2rem;
@@ -827,8 +867,11 @@ footer .copyright .logo-bottom {
 
 @media (max-width:576px) {
 
-    .header{
+    .header {
         display: none;
+    }
+    .mobile-nav{
+        display: block;
     }
 
     footer .exerciseItem {
@@ -849,6 +892,9 @@ footer .copyright .logo-bottom {
 
     footer div.share {
         font-size: 2px;
+    }
+    footer p{
+        padding-bottom: 58px;
     }
 }
 
