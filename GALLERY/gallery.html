@@ -16,6 +16,21 @@
 
 <body>
 
+  <header class="header">
+    <nav id="navbar">
+        <a href="index.html" class="logo">
+            <img src="../Fitness/images/GYM (2).png" alt="">
+        </a>
+        <div>
+            <a href="../index.html" class="navi">Home</a>
+            <a href="../Fitness/fitness.html" class="navi">Fitness</a>
+            <a href="gallery.html" class="navi">Gallery</a>
+            <a href="../store/store.html" class="navi">Store</a>
+        </div>
+
+        <a class="button1" href="./signup/signup.html">Get Fit</a>
+    </nav>
+</header>
  
   <section class="showcase">
 
@@ -119,7 +134,9 @@
 
   <!-- //AOS LIBRARY -->
 
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
   <script>
     AOS.init({
 
@@ -137,6 +154,14 @@
         btns[i].className = 'active';
       }
     }
+
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 74) {
+            $('#navbar').addClass('nav-sticky');
+        } else {
+            $('#navbar').removeClass('nav-sticky');
+        }
+    });
   </script>
 
 

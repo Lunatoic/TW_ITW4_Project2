@@ -3,15 +3,6 @@ let headerScrolled = document.querySelector('.headerScrolled');
 let about = document.querySelector('#about');
 let home = document.querySelector('.home');
 
-about.addEventListener('wheel', ()=> {
-    console.log('about');
-        header.classList.add("headerScrolled");
-});
-home.addEventListener('wheel', ()=> {
-    console.log('home');
-        header.classList.remove("headerScrolled");
-});
-
 const swiper = new Swiper(".swiper", {
     autoplay: {
         delay: 3000,
@@ -89,3 +80,11 @@ btw4.addEventListener('mouseout', ()=>{
 //         imgContent[p].style.display = 'block';
 //     });
 // }
+
+$(window).scroll(function () {
+    if ($(this).scrollTop() > 74) {
+        $('#navbar').addClass('nav-sticky');
+    } else {
+        $('#navbar').removeClass('nav-sticky');
+    }
+});

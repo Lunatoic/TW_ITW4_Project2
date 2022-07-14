@@ -22,6 +22,8 @@ html {
     overflow-x: hidden;
     scroll-padding-top: 9rem;
     scroll-behavior: smooth;
+}
+section{
     padding:40px;
 }
 
@@ -30,12 +32,75 @@ body {
     
 }
 
+.header {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.header a {
+    color: rgb(255, 255, 255);
+    margin: 0.5rem;
+    text-decoration: none;
+}
+
+.header .logo img {
+    height: 3.5rem;
+    width: 7.5rem;
+}
+
+.header #navbar.nav-sticky {
+    background: rgb(0, 0, 0);
+    width: 100%;
+}
+
+.header #navbar {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    z-index: 1000;
+    justify-content: space-between;
+    background-color: #211f1f96;
+}
+
+.header #navbar a:hover {
+    color: var(--main-color);
+    border-bottom: .1rem solid var(--main-color);
+    padding-bottom: .5rem;
+}
+
+.header #navbar a.active {
+    color: var(--main-color);
+    border-bottom: .1rem solid var(--main-color);
+    padding-bottom: .5rem;
+}
+
+.button1 {
+    margin: 0px 0px 0px 90px;
+    padding: 6px 24px;
+    background-color: rgb(240, 25, 25);
+    color: white;
+    border-color: white;
+    font-size: 20px;
+    cursor: pointer;
+    letter-spacing: 1px;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+.button1:hover {
+    background-color: rgb(173, 5, 5);
+    letter-spacing: 3px;
+}
+
 .store-heading{
     font-size:40px;
     color:black;
     font-weight: 700;
     text-align: center;
     padding-bottom: 40px;
+    padding-top: 40px;
 
 
 }

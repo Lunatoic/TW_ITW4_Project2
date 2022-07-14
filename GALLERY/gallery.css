@@ -1,13 +1,80 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
 
+:root {
+  --main-color: #ff1010;
+  --bg: #292c36;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: .2s linear;
 }
 
-.header a{
-  font-size: 17px;
+header {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+.header a {
+  color: #fff;
+  margin: 1.3rem;
+  text-decoration: none;
+  font-size: 1.8rem;
+}
+
+.header .logo img {
+  height: 4.5rem;
+  width: 9.5rem;
+}
+
+.header #navbar.nav-sticky {
+  background: rgba(35, 35, 35, 1);
+  width: 100%;
+}
+
+.header #navbar {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  z-index: 1000;
+  justify-content: space-between;
+}
+
+.header #navbar a:hover {
+  color: var(--main-color);
+  border-bottom: .1rem solid var(--main-color);
+  padding-bottom: .5rem;
+}
+
+.header #navbar a.active {
+  color: var(--main-color);
+  border-bottom: .1rem solid var(--main-color);
+  padding-bottom: .5rem;
+}
+.button1 {
+  margin: 0px 0px 0px 90px;
+  padding: 6px 24px;
+  background-color: rgb(240, 25, 25);
+  color: white;
+  border-color: white;
+  font-size: 20px;
+  cursor: pointer;
+  letter-spacing: 1px;
+  text-decoration: none;
+  border-radius: 10px;
+}
+.button1:hover {
+  background-color: rgb(173, 5, 5);
+  letter-spacing: 3px;
 }
 
 

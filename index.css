@@ -81,7 +81,7 @@ body {
     filter: grayscale(65%);
 }
 
-header:hover {
+.home:hover {
     filter: none;
 }
 
@@ -110,7 +110,6 @@ header:hover {
     letter-spacing: 1px;
     text-decoration: none;
     border-radius: 10px;
-
 }
 
 .button1:hover {
